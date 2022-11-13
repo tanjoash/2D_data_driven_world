@@ -1,0 +1,60 @@
+/*Page and Heading styling*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  padding: 12px 5%;
+}
+
+.logo {
+  margin-right: auto;
+  color: black;
+  text-decoration: none;
+}
+
+.navi {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.navi li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navi li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+
+.navi li a:hover {
+  color: #b3cde0;
+  transition-duration: 0.5s;
+}
+
+/*Page Styling*/
+
+.home_container {
+  margin-top: 90px;
+  padding: 0 8%;
+}
+
+.home_container h1 {
+  font-size: 3em;
+}
+
+.chart {
+  padding: 0 15%;
+}
