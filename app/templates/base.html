@@ -1,0 +1,23 @@
+<html>
+    2D Project
+    <head>
+        <title>{{title}}</title>
+        <script type="module">import * as library from './static/__target__/library.js'; window.library = library;</script>
+    </head>
+    <body>
+        <h1>Welcome to {{title}}</h1>
+        <p>
+            This is just a test html to put the interactive graph
+        </p>
+        <p>
+        	<div id="generate">...</div>
+        	<button onclick="library.generate()">Generate 10 numbers</button>
+        </p>
+        <p>
+        	<div id="sorted">...</div>
+        	<button onclick="library.sortnumber1()">Sort</button>
+        </p>
+        <br><a href="index">Home</a>
+
+    </body>
+</html>
