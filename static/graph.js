@@ -37,4 +37,25 @@ d3.csv(file2020).then(function(loadedData){
     }
   })
 
+  var myChart2 = document.getElementById("myChart2").getContext('2d');
+
+  var popChart2 = new Chart(myChart2, {
+    data:{
+      labels: ['Singapore', 'Malaysia', 'Indonesia', 'China'],
+      datasets: [{
+        type: 'line',
+        label: 'People',
+        data: [1000, 5000, 3000, 4000]
+      }]
+    },
+    options:{
+      plugins: {
+        title: {
+          display: true,
+          text: 'My Second Graph'
+        }
+      }
+    }
+  })
+
 })

@@ -55,6 +55,18 @@
   font-size: 3em;
 }
 
-.chart {
-  padding: 0 15%;
+.chart_container {
+  padding: 0 0%;
+}
+
+.chart_sub_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart{
+  width: 45%;
+  border: 1px solid black;
+  
 }
