@@ -1,0 +1,27 @@
+/*Page Styling*/
+
+.home_container {
+  margin-top: 90px;
+  padding: 0 8%;
+}
+
+.home_container h1 {
+  font-size: 3em;
+}
+
+.home_container p {
+  font-size: 1.1em;
+}
+
+.home_subcontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.sub_left {
+  width: 75%;
+}
+
+.sub_right {
+  width: 25%;
+}
