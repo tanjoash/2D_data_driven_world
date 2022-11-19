@@ -1,5 +1,7 @@
 // d3 read csv files
-let file2020 = "./assets/2020 GFSI by country.csv";
+// let file2020 = "../assets/2020 GFSI by country.csv";
+let file2020 = "/static/assets/2020 GFSI by country.csv"
+
 
 d3.csv(file2020).then(function(loadedData){
   let data = [];

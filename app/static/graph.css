@@ -1,0 +1,25 @@
+/*Page Styling*/
+
+.home_container {
+  margin-top: 90px;
+  padding: 0 8%;
+}
+
+.home_container h1 {
+  font-size: 3em;
+}
+
+.chart_container {
+  padding: 0 0%;
+}
+
+.chart_sub_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chart{
+  width: 45%;
+  border: 1px solid black;
+}

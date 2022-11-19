@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2D Group 06</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'report.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'common.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar_container">
+      <a class="logo" href="{{ url_for('index')}}"><h1>2D Project</h1></a>
+      <nav>
+        <ul class="navi">
+          <li><a href="{{ url_for('index')}}">Home</a></li>
+          <li><a href="{{ url_for('report')}}">Report</a></li>
+          <li><a href="{{ url_for('graph')}}">Graph</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main Introduction to Food Security-->
+    <div class="report_container">
+        <div class="report_container_header">
+          <h1>Food Security</h1>
+          <p>According to the United Nations' (UN) Committee on World Food Security,
+            food security is defined as people, "at all times", having <b>"Physical, Social, and Economic"</b>
+            access to <b>"sufficient, safe and nutritious food"</b> that meets their "dietary needs
+            for an active and healthy life."
+            <a href="https://www.un.org/waterforlifedecade/food_security.shtml">
+              (United Nations, 1996)
+            </a>
+          </p>
+      </div>
+      <!--Project Outline-->
+      <div class="report_subcontainer">
+        <h2>Project</h2>
+          <p>In line with the definition of Food security provided by UN, we have decided to
+            find out how
+            <ul>
+              <li><b>Physical Factors</b></li>
+              <li><b>Social Factors</b></li>
+              <li><b>Economic Factors</b></li>
+            </ul>
+            have affected the <b>dietary requirements for an active and healthy lifestyle</b> of the population of each country.
+          </p>
+      </div>
+      <!--Physical Factors-->
+      <div class="report_subcontainer">
+        <h2>Physical Factors</h2>
+          <p>We define <b>Physical Factors</b> as individuals having a small portion of control over these factors;
+          of which we have two factors.
+          </p>
+        <ul>
+          <li>
+            <h3>Percentage of population having eating disorders for each country in <u>percent</u></h3>
+            <p>There are four types of eating disorders, of which some results in overconsumption while others
+            lead to underconsumption of food. 
+            <a href="https://www.aware.org.sg/information/eating-disorders/" >(AWARESG, 2022)</a>
+            However, our main concern for eating disorders is that individuals
+            have a mental "insecurity" with food which results in a <b>unhealthy</b> lifestyle.
+            </p>
+          </li>
+          <li>
+            <h3>Land used for agriculture for each country in <u>km<sup>2</sup> per capita</u></h3>
+            <p>The greater the agricultural land per capita suggests that there is more allocated land 
+            to help grow crops per person. Assuming production/growing of food per land per capita is constant,
+            it is safe to say that the greater land per capita, the greater the "access to sufficient ... food".
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Social Factors-->
+      <div class="report_subcontainer">
+        <h2>Social Factors</h2>
+          <p>We define <b>Social Factors</b> as individuals not being able to control these factors; of which we have 2 factors.</p>
+        <ul>
+          <li>
+            <h3>Percentage of population having access to basic drinking water services in <u>percent</u></h3>
+            <p>Water is an essential to food security. <a href="https://www.un.org/waterforlifedecade/food_security.shtml">(United Nations)</a>
+            Water is used in many ways to ensure a food security; to grow crops, to clean food, and to even cook the food. Hence, we 
+            have also considered how the access to basic drink water relates to the "access to sufficient, safe and nutritious food".
+            </p>
+          </li>
+          <li>
+            <h3>Carbon Dioxide (CO<sub>2</sub>) emitted for each country per agricultural land area in <u>Million Metric Tons(MMT)/km<sup>2</sup></u></h3>
+            <p>CO<sub>2</sub> helps plant grow through photosynthesis which helps increase crop yields. It might seem contradictory to choose this factor,
+            however, too much CO<sub>2</sub> also comes at the "cost of lower nutritional quality as plants
+            accumulate more carbohydrates and less minerals" <a href="https://www.thelancet.com/journals/lanplh/article/PIIS2542-5196(19)30108-1/fulltext#%20">(L ebi, 2019)</a>.
+            The increase in carbhoydrates result in greater calorie yield which fits our model since we are focusing on calories 
+            per capita per day.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Economic Factors-->
+      <div class="report_subcontainer">
+        <h2>Economic Factors</h2>
+          <p>We define <b>Economic Factors</b> as factors that is due to the state of the market around the world, uncontrollable by individuals.</p>
+        <ul>
+          <li>
+            <h3>Percentage of population employed in agriculture, forestry and fishing in <u>percent</u></h3>
+            <p>We believe the greater the percentage of population allocated to agriculture, the faster and more efficient
+              the growing of crops are. This allows greater harvest and higher "access to ... food" in general.
+            </p>
+          </li>
+          <li>
+            <h3>Gross Domestic Product per capita, adjusted for PPP <u>US$ per capita</u></h3>
+            <p>Increasing GDP per capita can increase purchasing power of individuals. It also ensures that food prices are affordable allowing greater Food Security.
+              <a href="https://www.researchgate.net/publication/344317685_Influence_of_Climate_and_Non-Climatic_Factors_on_Global_Food_Security_Index_A_Cross-Sectional_Country-Wise_Analysis">(K. Singh, 2020)</a>.
+              Further research also shows that "inflation and population growth rates are the most responsible for food insecurity in most 
+              developing countries" <a href="https://potravinarstvo.com/journal1/index.php/potravinarstvo/article/view/1734/2073#toc">(Fernandes. M., 2022)</a>.
+              Hence, for the simplicity of our model and to cover economics factors, we will focus on GDP per capita and how it affects food security in general.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <!--Y value-->
+      <div class="report_subcontainer">
+        <h2>Dependent Value</h2>
+          <h3>Ratio of average calories provided in <u>kcal per capita per day</u> to average calorie requirements per capita per day <u>in kcal per capita per day</u></h3>
+            <p style="padding-top: 10px;">To measure food security, more specifically the dietary needs for an active and healthy life, we will be calculating it through the use of 
+              the ratio of average calories provided per individual per day over the average calorie requirement per individual per day.
+              If the ratio is less than 1, we will deem that there there is food insecurity as the calorie requirement has not been met and the dietary needs 
+              of each individual has not been met. However, if the ratio is more than 1, we will deem that there is sufficient food security as the calories requirement 
+              has been met and dietary needs of each individual has been met.
+            </p>
+      </div>
+    </div>
+  </body>
+</html>

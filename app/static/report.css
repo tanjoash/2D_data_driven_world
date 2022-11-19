@@ -1,0 +1,49 @@
+/*Page Styling*/
+/*Main Container Style*/
+.report_container {
+    margin: 40px 0;
+    padding: 0 8%;
+  }
+  
+  .report_container_header {
+    padding: 40px 8% 10px 8%;
+  }
+  
+  .report_container_header h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .report_container_header p {
+    padding-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  .report_subcontainer {
+    padding: 0 8%;
+    margin-top: 20px;
+  }
+  
+  .report_subcontainer h2 {
+    padding: 10px 0;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .report_subcontainer p {
+    font-size: 1.1em;
+  }
+  
+  .report_subcontainer ul {
+    padding-left: 3%;
+  }
+  
+  .report_subcontainer ul h3 {
+    padding-top: 30px;
+    font-size: 1.3em;
+  }
+  
+  .report_subcontainer ul li p{
+    padding-top: 5px;
+    font-size: 1.1em;
+  }
