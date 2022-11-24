@@ -1,12 +1,18 @@
 /*Page Styling*/
 
+body {
+  background-image: url("./assets/index_image.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .home_container {
   margin-top: 90px;
   padding: 0 8%;
 }
 
 .home_container h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .home_container p {
@@ -20,6 +26,16 @@
 
 .sub_left {
   width: 75%;
+}
+
+.sub_left h2 {
+  margin-top: 40px;
+  font-size: 2em;
+}
+
+.sub_left p {
+  padding: 10px 0;
+  font-size: 1.1em;
 }
 
 .sub_right {

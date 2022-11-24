@@ -10,7 +10,7 @@
 }
 
 .chart_container {
-  padding: 0 0%;
+  margin: 80px 0;
 }
 
 .chart_sub_container {
@@ -20,6 +20,5 @@
 }
 
 .chart{
-  width: 45%;
-  border: 1px solid black;
+  padding: 0 10%;
 }
