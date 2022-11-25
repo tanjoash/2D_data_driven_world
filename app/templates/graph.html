@@ -34,6 +34,8 @@
         <canvas id="myChart3"></canvas>
       </div>
     </div>
-    <script src="../static/graph.js"></script>
+    {% block scripts %}
+    <script type="module">import * as library from '../static/graph.js'; window.library = library;</script>
+    {% endblock %}
   </body>
 </html>
