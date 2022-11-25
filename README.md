@@ -43,7 +43,7 @@ application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=True)
 chmod a+x ./runflaskvoc.sh
 ```
 
-6. For subsequent times that we want to run the flask server.
+6. For first and subsequent times that we want to run the flask server.
 ```shell
 ./runflaskvoc.sh
 ```
@@ -67,7 +67,6 @@ pipenv install
 ```shell
 pipenv shell
 ```
-
 
 4. Ensure the following on `__init__.py`
 ```python
