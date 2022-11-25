@@ -34,10 +34,9 @@ pipenv install
 ```shell
 pipenv shell
 ```
-
+### Steps to follow for running on vocareum
 4. Ensure the following on `__init__.py`
 ```python
-# set voc=False if you run on local computer
 application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=True)
 ```
 
@@ -52,3 +51,16 @@ chmod a+x ./runflaskvoc.sh
 ```
 
 6.  Once it is running, you can open another tab in your browser and type the following url: [https://myserver.vocareum.com/](https://myserver.vocareum.com/)
+
+### Steps to follow for running on local computer
+4. Ensure the following on `__init__.py`
+```python
+application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=False)
+```
+
+5. Run the flask server on local computer
+```shell
+flask run
+```
+
+6. Enter the website shown in the terminal hosted on local computer to see the website.
