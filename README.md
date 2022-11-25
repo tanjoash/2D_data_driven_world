@@ -34,7 +34,9 @@ pipenv install
 ```shell
 pipenv shell
 ```
-### Steps to follow for running on vocareum
+### Steps to follow for running on vocareum.
+- Go to [Steps for local computer](#steps-to-follow-for-running-on-local-computer) if we are running the server locally.
+
 4. Ensure the following on `__init__.py`
 ```python
 application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=True)
