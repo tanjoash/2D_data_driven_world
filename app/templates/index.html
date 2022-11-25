@@ -25,7 +25,14 @@
       <h1>Hello!</h1>
       <div class="home_subcontainer">
         <div class="sub_left">
-          <p>We are group 06 from cohort 06. Our report will be showing balh balh</p>
+          <p>We are group 06 from cohort 06.</p>
+          <h2>How this website works</h2>
+          <br/>
+          <h3><a href="{{ url_for('report') }}">Report page</a></h3>
+          <p>Report page shows our report of our 2D project.</p>
+          <h3><a href="{{ url_for('graph') }}">Graph page</a></h3>
+          <p>Graph page shows our report of our 2D project. <a href="https://www.chartjs.org/">Chart.js</a> was used in the making of graphs on the graph page.</p>    
+          <p>You are also able to filter the variables by clicking the variables under Legend and hover over the points to see the value of that particular point.</p>      
         </div>
         <div style="text-align: center;" class="sub_right">
           <h2>Members:</h2>
@@ -33,7 +40,6 @@
           <p>Joash Tan Jia Le 1005862</p>
           <p>Keith Chua Dian-Xun 1005880</p>
           <p>Wong Wei Jin Justin 1006001</p>
-          <p></p>
         </div>
       </div>
     </div>
