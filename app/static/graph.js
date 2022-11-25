@@ -1,4 +1,5 @@
 // d3 read csv files
+console.log('js loaded')
 let filemodel1 = "/static/assets/dfallyears_clean_1.csv"
 let filemodel2 = "/static/assets/dfallyears_clean_2.csv"
 let filemodel3 = "/static/assets/dfallyears_clean_3.csv"
