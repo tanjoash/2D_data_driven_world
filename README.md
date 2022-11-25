@@ -26,7 +26,7 @@ First make sure that you have installed `pipenv` package.
 pip install --user pipenv
 ```
 
-`2D_Project` will be our **root** folder of our application. 
+`2D_Project` will be the **root** folder of our application. 
 
 From the root folder, install the packages specified in the `Pipfile`.
 ```shell
@@ -37,4 +37,7 @@ To activate the virtualenv, run
 ```shell
 pipenv shell
 ```
-
+Finally run flask
+```shell
+flask run
+```
