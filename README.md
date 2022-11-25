@@ -18,6 +18,7 @@
 ## Running Website
 
 ### Install required libraries to run Website
+#### Steps to follow for running on local computer
 
 1. First make sure that you have installed `pipenv` package.
 ```shell
@@ -34,27 +35,7 @@ pipenv install
 ```shell
 pipenv shell
 ```
-### Steps to follow for running on vocareum.
-- Go to [Steps for local computer](#steps-to-follow-for-running-on-local-computer) if we are running the server locally.
 
-4. Ensure the following on `__init__.py`
-```python
-application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=True)
-```
-
-5. First Time running flask (Only needs to be done once)
-```shell
-chmod a+x ./runflaskvoc.sh
-```
-
-6. For subsequent times that we want to run the flask server.
-```shell
-./runflaskvoc.sh
-```
-
-6.  Once it is running, you can open another tab in your browser and type the following url: [https://myserver.vocareum.com/](https://myserver.vocareum.com/)
-
-### Steps to follow for running on local computer
 4. Ensure the following on `__init__.py`
 ```python
 application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=False)
