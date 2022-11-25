@@ -33,6 +33,10 @@ body {
   font-size: 2em;
 }
 
+.sub_left h3 {
+  font-size: 1.4em;
+}
+
 .sub_left p {
   padding: 10px 0;
   font-size: 1.1em;

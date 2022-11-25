@@ -116,7 +116,7 @@ d3.csv(filemodel1).then(function(loadedData){
           position: 'bottom',
           title: {
             display: true,
-            text:'Units',
+            text:'Variables/respective units',
             font: { size: 24}
           }
         },
@@ -262,7 +262,7 @@ d3.csv(filemodel2).then(function(loadedData){
           position: 'bottom',
           title: {
             display: true,
-            text:'Units',
+            text:'Variables/respective units',
             font: { size: 24}
           }
         },
@@ -423,7 +423,7 @@ d3.csv(filemodel3).then(function(loadedData){
           position: 'bottom',
           title: {
             display: true,
-            text:'Units',
+            text:'Variables/respective units',
             font: { size: 24}
           }
         },
