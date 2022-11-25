@@ -15,27 +15,23 @@
 3. numpy 
 4. pandas
 
-## Running Website
-
-### Install required libraries to run Website
+## Running Website On Vocareum
 
 1. First make sure that you have installed `pipenv` package.
 ```shell
-pip install --user pipenv
+python3.8 -m pip install pipenv
 ```
 
 2. `2D_Project` will be the **root** folder of our application. 
 - From the root folder, install the packages specified in the `Pipfile`.
 ```shell
-pipenv install
+python3.8 -m pipenv install
 ```
 
 3. To activate the virtualenv, run
 ```shell
-pipenv shell
+python3.8 -m pipenv shell
 ```
-### Steps to follow for running on vocareum.
-- Go to [Steps for local computer](#steps-to-follow-for-running-on-local-computer) if we are running the server locally.
 
 4. Ensure the following on `__init__.py`
 ```python
@@ -54,7 +50,25 @@ chmod a+x ./runflaskvoc.sh
 
 6.  Once it is running, you can open another tab in your browser and type the following url: [https://myserver.vocareum.com/](https://myserver.vocareum.com/)
 
-### Steps to follow for running on local computer
+## Running website on local computer
+
+1. First make sure that you have installed `pipenv` package.
+```shell
+pip install --user pipenv
+```
+
+2. `2D_Project` will be the **root** folder of our application. 
+- From the root folder, install the packages specified in the `Pipfile`.
+```shell
+pipenv install
+```
+
+3. To activate the virtualenv, run
+```shell
+pipenv shell
+```
+
+
 4. Ensure the following on `__init__.py`
 ```python
 application.wsgi_app = PrefixMiddleware(application.wsgi_app, voc=False)
