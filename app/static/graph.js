@@ -141,7 +141,7 @@ d3.csv(filemodel1).then(function(loadedData){
           position: 'top',
           align: 'center',
           display: true,
-          text: 'Y Ratio against variables',
+          text: 'Y Ratio against variables (Model 1)',
           font: { size: 30 }
         }
       }
@@ -287,7 +287,7 @@ d3.csv(filemodel2).then(function(loadedData){
           position: 'top',
           align: 'center',
           display: true,
-          text: '% Undernourished against variables',
+          text: '% Undernourished against variables (Model 2)',
           font: { size: 30 }
         }
       }
@@ -448,7 +448,7 @@ d3.csv(filemodel3).then(function(loadedData){
           position: 'top',
           align: 'center',
           display: true,
-          text: 'Y ratio against variables',
+          text: 'Y ratio against variables (Model 3)',
           font: { size: 30 }
         }
       }
